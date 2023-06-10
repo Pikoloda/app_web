@@ -15,3 +15,14 @@ class Account:
             self._balance -= amount
             print(f"{amount} withraw from account {self.name}")
 
+    def show_balance(self):
+        print(f"Account {self.name} balance: {self._balance}")
+
+
+if __name__ == '__main__':
+    account = Account('Piotr')
+    account.deposit(10)
+    account.deposit(0.1)
+    account.deposit(0.3)
+    account.deposit(7.2)
+    account.show_balance()
